@@ -53,7 +53,7 @@ const Header = () => {
                                 </>
                             )}
                         </div>
-                        <MobileMenu className="block md:hidden"/>
+                        <MobileMenu />
                     </div>
                 </div>
             </div>
