@@ -12,7 +12,7 @@ import { useState } from "react";
 const MobileMenu = () => {
     const router = useRouter();
     return (
-         <div className="block md:hodden">
+         <div className="block md:hidden">
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <Button variant="ghost" size={"icon"} className="border">
