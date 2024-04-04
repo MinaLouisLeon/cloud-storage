@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { UserButton, auth, currentUser } from "@clerk/nextjs";
 const Header = () => {
     const { userId } = auth();
-    console.log(userId)
     return (
         <header className="border-b">
             <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">

@@ -5,7 +5,6 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req:any) {
     const res = await req.json();
-    console.log(res);
     try {
         // @ts-ignore
         const data = await resend.emails.send({

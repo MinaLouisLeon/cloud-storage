@@ -6,7 +6,6 @@ import TableWrapper from "./_componenets/table/TableWrapper";
 const Files = async () => {
   const { userId } = auth();
   const docsResult = await getDocs(collection(db, "users", userId!, "files"));
-  console.log("doc result",docsResult);
   const skeletonFiles: FileType[] = docsResult.docs.map((doc) => ({
     id: doc.id,
     filename: doc.data().filename || doc.id,

@@ -1,10 +1,8 @@
 import { SelectedFilesType } from '@/types'
 import prettyBytes from 'pretty-bytes'
-import React from 'react'
 import { FileIcon } from 'react-file-icon'
 
 const UploadForm = ({ filesData }: { filesData: SelectedFilesType[] | null }) => {
-  console.log(filesData)
   return (
     <div>
       {filesData?.map((file) => {

@@ -39,7 +39,6 @@ export function DeleteModal() {
         try {
             await deleteObject(fileRef).then(async () => {
                 deleteDoc(doc(db, "users", user.id, "files", fileID)).then(() => {
-                    console.log("done delete")
                 })
             }).finally(() => {
                 setIsDeleteModalOpen(false);
