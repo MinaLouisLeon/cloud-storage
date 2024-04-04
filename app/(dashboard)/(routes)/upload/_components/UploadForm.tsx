@@ -19,7 +19,7 @@ const UploadForm = ({ filesData }: { filesData: SelectedFilesType[] | null }) =>
               <h2>{file.filename}</h2>
               <p>{extension} / {prettyBytes(file.size)}</p>
             </div>
-            {!file.isAccepted && <h2 className=' text-red-500'>File size is more than 20MB, can't be uploaded</h2>}
+            {!file.isAccepted && <h2 className='text-red-500'>File size is more than 20MB, can&apos;t be uploaded</h2>}
           </div>
         )
       }
