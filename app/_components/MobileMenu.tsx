@@ -12,7 +12,7 @@ import { useState } from "react";
 const MobileMenu = () => {
     const router = useRouter();
     return (
- 
+         <div className="block md:hodden">
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <Button variant="ghost" size={"icon"} className="border">
@@ -26,6 +26,7 @@ const MobileMenu = () => {
                     <DropdownMenuItem>About Us</DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>
+             </div>
     )
 }
 
