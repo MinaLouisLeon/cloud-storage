@@ -8,7 +8,7 @@ const UploadForm = ({ filesData }: { filesData: SelectedFilesType[] | null }) =>
       {filesData?.map((file) => {
         const extension: string = file.type.split("/")[1]
         return (
-          <div className={`border rounded-lg flex items-center h-20 w-full gap-2 my-2 ${file.isAccepted ? "" : "border-red-500"}`}>
+          <div className={`border rounded-lg flex items-center h-20 w-full gap-2 my-2 ${file.isAccepted ? "" : "border-red-500"}`} key={file.filename}>
             <div className='w-10 h-10 ml-2'>
               <FileIcon
                 extension={extension}
